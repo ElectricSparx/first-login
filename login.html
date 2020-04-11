@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <title>Log-In</title>
+    <style>
+        body    {
+            background-color: rgb(50, 51, 61);
+        }
+        
+        header {
+            font-size: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 5%;
+            margin-top: 15vh;
+            height: 350px;
+            width: 400px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            padding-top:8px;
+            text-shadow: 2px 2px 1px lightgrey;
+        }
+
+        .sub-title {
+            font-family: Arial;
+            text-shadow: 2px 2px 1px lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <header class="font-weight-bold title">Sign In</header>
+            <div class="form-group">
+                <label for="exampleInputEmail1 font-weight-bold sub-title">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1 font-weight-bold">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+            <p class="text-sm-right">Forgot <a href="#">password?</a></p>
+        </form>
+    </div>
+</body>
+</html>
