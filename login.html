@@ -6,57 +6,106 @@
     <link
         rel="stylesheet" 
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
-    <title>Log-In</title>
+    
+    <link 
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+  
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" 
+        rel="stylesheet"> 
+  
+    
+        <title>Login</title>
     <style>
-        body    {
-            background-color: rgb(50, 51, 61);
-        }
-        
-        header {
-            font-size: 20px;
+        html,
+        body {
+            font-family: fantasy;
+            color:white;
         }
 
-        .container {
-            background-color: white;
-            border-radius: 5%;
-            margin-top: 15vh;
-            height: 350px;
+        .container-fluid {
+            background-color: darkblue;
+        }
+
+        .col {
+            height: 100vh;
+        }
+
+        .wrapper {
             width: 400px;
+            padding: 21px;
+            height: 60vh;
         }
 
-        .title {
-            display: flex;
-            justify-content: center;
-            padding-top:8px;
-            text-shadow: 2px 2px 1px lightgrey;
+        input::placeholder {
+            width: 100%;
         }
 
-        .sub-title {
-            font-family: Arial;
-            text-shadow: 2px 2px 1px lightgrey;
+        .website-info {
+            background: url('https://img.freepik.com/free-photo/paint-drops-black-background_23-2147798308.jpg?size=626&ext=jpg');
         }
+
+        .log-in {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .button {
+        border: none;
+        display: block;
+        letter-spacing: 1.5;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding: 9px;
+        text-transform: uppercase;
+        width: 90%;
+        }
+
+        input {
+        background-color: rgba(255, 255, 255, 0.800);
+        border: none;
+        color: black;
+        margin-bottom: 15px;
+        padding: 9px;
+        width: 100%
+      }
+      h3 {
+          padding-bottom: 21px;
+      }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <form>
-            <header class="font-weight-bold title">Sign In</header>
-            <div class="form-group">
-                <label for="exampleInputEmail1 font-weight-bold sub-title">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col col-left d-flex align-items-center justify-content-end">
+                <div class="website-info wrapper">
+                    <h3>Welcome to [Website]!</h3>
+                    <p>Here you will find:
+                        <ul>
+                            <li>Thing 1.</li>
+                            <li>Thing 2.</li>
+                            <li>Thing 3.</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1 font-weight-bold">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+
+            <div class="col col-right d-flex align-items-center justify-content-start">
+                <div class="log-in wrapper">
+                    <h3>Login</h3>
+                    <div class="input-group">
+                        <input placeholder="Username">
+                        <input placeholder="Password">
+                        <button class="button">Login</button>
+                        <p id="forgot-passoword">Forgot password?
+                            <span>Click here</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
-            <p class="text-sm-right">Forgot <a href="#">password?</a></p>
-        </form>
+        </div>
     </div>
 </body>
 </html>
